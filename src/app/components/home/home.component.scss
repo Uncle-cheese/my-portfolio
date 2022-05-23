@@ -1,0 +1,77 @@
+.background-img
+{
+
+  background-image: url('../../../assets/back-img.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after{
+    content: "";
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100% !important; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.1); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  }
+}
+
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  z-index: 1000;
+  position: relative;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.btn-explore{
+  background: #fff;
+  border-radius: 8px;
+  outline: none;
+}
+
+.about-content{
+  height: 100vh;
+  width: 100%;
+  background: #ECE9E6;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.skills-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  background: whitesmoke;
+}
+
+
