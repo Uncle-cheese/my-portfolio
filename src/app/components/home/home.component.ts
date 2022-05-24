@@ -17,6 +17,18 @@ export class HomeComponent implements OnInit {
     { image: '../../../assets/postdres.png', skill_name: 'Postgres' },
   ];
 
+  services=[
+    {images:'../../../assets/WebDevelopment.svg',name:'Web Development',description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia dolorum'},
+
+    {images:'../../../assets/Cleancode.svg',
+    name:'Clean Code',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia dolorum'},
+
+    {images:'../../../assets/phone.svg',
+    name:'Responsive Design',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia dolorum'},
+  ]
+
   constructor() {}
 
   ngOnInit(): void {}

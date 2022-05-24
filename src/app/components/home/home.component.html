@@ -12,18 +12,73 @@
     </button>
   </div>
 </div>
-
-<div class="about-content">
+<!-- about section -->
+<div class="about-content" id="About">
   <div class="about">
-    <h1 style="border-bottom: 4px solid #000">About</h1>
+    <h1 class="abt" style="border-bottom: 4px solid #000">About</h1>
   </div>
   <div class="container" style="overflow: hidden">
     <div class="row my-2">
-      <div class="col-lg-3 col-md-4 col-sm-12" *ngFor="let skill of skills">
+      <div class="col-lg-3 col-md-4 col-sm-6 skills-section" *ngFor="let skill of skills">
         <img src="{{ skill.image }}" class="skill" alt="" />
-        <h3 class="skill_name">{{skill.skill_name}}</h3>
+        <!-- <div class="skill-name">
+          <h3 class="skill_name">{{skill.skill_name}}</h3>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+<!-- service section -->
+
+<div class="container" id="Service">
+  <div class="service p-5">
+    <h1>Service</h1>
+  </div>
+  <div class="services">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 service-section" *ngFor="let service of services">
+        <img  src="{{service.images}}" alt="">
+        <h3>{{service.name}}</h3>
+        <p>{{service.description}}</p>
       </div>
     </div>
   </div>
 </div>
-Ï
+
+<!-- footer -->
+
+<footer>
+
+  <div class="footer">
+    <div class="left box">
+      <h2>About me</h2>
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur labore, perspiciatis incidunt deserunt, natus quo excepturi omnis laborum dicta veritatis architecto cupiditate, quam voluptatem at blanditiis nostrum vero tempora?</p>
+
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="center box">
+    <h2>Address</h2>
+    <div class="content">
+      <div class="place">
+        <span class="fas fa-map-marker-alt"></span>
+        <span class="text">Johannesburg,Braamfotain</span>
+      </div>
+      <div class="phone">
+        <span class="fas fa-phone-alt"></span>
+        <span class="text">(067) 113 0709</span>
+      </div>
+      <div class="place">
+        <span class="fas fa-envelope"></span>
+        <span class="text">nhlanhlamavundla1@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+</footer>
