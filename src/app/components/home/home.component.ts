@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+
 })
 export class HomeComponent implements OnInit {
   skills = [
@@ -29,7 +31,12 @@ export class HomeComponent implements OnInit {
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia dolorum'},
   ]
 
-  constructor() {}
+  constructor(private scroller: ViewportScroller) {}
 
   ngOnInit(): void {}
+
+  goToSection(target:any){
+    console.log("to",target);
+ this.scroller.scrollToAnchor(target);
+  }
 }
